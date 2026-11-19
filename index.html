@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>H C Odontologia e Estética | Dentista no Centro de São Bernardo do Campo</title>
+  <meta name="description" content="H C Odontologia e Estética no Centro de São Bernardo do Campo (R. Tenente Salles, 13). Nota 5,0 no Google com 173 avaliações. Clareamento, facetas, restaurações e prevenção.">
+  <style>
+    :root {
+      --bg-page: #f4f7fa;
+      --bg-surface: #ffffff;
+      --bg-navy: #0f2c44;
+      --bg-navy-deep: #091d2e;
+      --bg-tint: #e8f1f6;
+      --text-primary: #132230;
+      --text-secondary: #4a5d6e;
+      --brand-primary: #145374;
+      --brand-primary-hover: #0e3d57;
+      --brand-accent: #b88b3b;
+      --brand-accent-soft: #fdf6e7;
+      --border-subtle: #d8e1ea;
+      --border-control: #657584;
+      --focus-ring: #0b57d0;
+      --error-color: #b3261e;
+      --radius-sm: 0.5rem;
+      --radius-md: 0.875rem;
+      --radius-lg: 1.25rem;
+      --shadow-card: 0 12px 32px -12px rgba(15, 44, 68, 0.12);
+      --max-w: 72rem;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.2;
+      margin-block-start: 0;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      color: var(--brand-primary);
+      text-underline-offset: 0.2em;
+    }
+
+    .container {
+      width: min(100% - 2rem, var(--max-w));
+      margin-inline: auto;
+    }
+
+    /* Barra de Demonstração Comercial */
+    .demo-banner {
+      background-color: var(--bg-navy-deep);
+      color: #e4edf5;
+      font-size: 0.85rem;
+      padding-block: 0.5rem;
+      border-block-end: 2px solid var(--brand-accent);
+    }
+
+    .demo-banner-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+    }
+
+    .demo-badge {
+      background-color: var(--brand-accent);
+      color: #ffffff;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-inline-end: 0.4rem;
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background-color: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-block-end: 1px solid var(--border-subtle);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: 0.875rem;
+      gap: 1rem;
+    }
+
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .brand-monogram {
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-navy);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      font-weight: 700;
+      font-size: 1.05rem;
+      letter-spacing: 0.04em;
+      border: 1.5px solid var(--brand-accent);
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: var(--bg-navy);
+      line-height: 1.15;
+    }
+
+    .brand-tagline {
+      font-size: 0.72rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--brand-primary);
+    }
+
+    @media (max-width: 52rem) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font: inherit;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.75rem 1.35rem;
+      min-height: 48px;
+      border-radius: var(--radius-sm);
+      border: 2px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.15s ease, border-color 0.15s ease;
+    }
+
+    @media (pointer: coarse) {
+      .btn {
+        min-height: 52px;
+      }
+    }
+
+    .btn:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid var(--focus-ring);
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      background-color: var(--brand-primary);
+      color: #ffffff;
+    }
+
+    .btn-primary:hover {
+      background-color: var(--brand-primary-hover);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border-color: var(--brand-primary);
+      color: var(--brand-primary);
+    }
+
+    .btn-outline:hover {
+      background-color: var(--bg-tint);
+    }
+
+    .btn-gold {
+      background-color: var(--brand-accent);
+      color: #ffffff;
+    }
+
+    .btn-gold:hover {
+      background-color: #9c742f;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--bg-navy) 0%, #163d5c 100%);
+      color: #ffffff;
+      padding-block: 3.75rem 4.25rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 2.5rem;
+      align-items: center;
+    }
+
+    @media (max-width: 56rem) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .rating-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: rgba(184, 139, 59, 0.18);
+      border: 1px solid rgba(226, 192, 125, 0.55);
+      color: #f9e4b7;
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin-block-end: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 2.95rem);
+      color: #ffffff;
+      margin-block-end: 1rem;
+    }
+
+    .hero-lead {
+      font-size: 1.1rem;
+      color: #d0deea;
+      margin-block-end: 1.75rem;
+      max-width: 58ch;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.875rem;
+      margin-block-end: 2rem;
+    }
+
+    .hero-outline-btn {
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.55);
+      color: #ffffff;
+    }
+
+    .hero-outline-btn:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-metrics {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+      gap: 1rem;
+      padding-block-start: 1.5rem;
+      border-block-start: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .metric-item strong {
+      display: block;
+      font-size: 1.05rem;
+      color: #ffffff;
+    }
+
+    .metric-item span {
+      font-size: 0.85rem;
+      color: #c2d4e4;
+    }
+
+    /* Card de Triagem Clínica no Hero */
+    .hero-card {
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-card-badge {
+      display: inline-block;
+      background-color: var(--bg-tint);
+      color: var(--brand-primary);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.25rem 0.65rem;
+      border-radius: 0.25rem;
+      margin-block-end: 0.75rem;
+    }
+
+    .hero-card h2 {
+      font-size: 1.35rem;
+      margin-block-end: 0.45rem;
+      color: var(--bg-navy);
+    }
+
+    .hero-card p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-block: 0 1.25rem;
+    }
+
+    .status-box {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-subtle);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      margin-block-end: 1.25rem;
+      font-size: 0.85rem;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 0.55rem;
+      height: 0.55rem;
+      border-radius: 50%;
+      background-color: #1f7a4c;
+      margin-inline-end: 0.4rem;
+    }
+
+    /* Sections */
+    .section {
+      padding-block: 4rem;
+      border-block-end: 1px solid var(--border-subtle);
+    }
+
+    .section-alt {
+      background-color: var(--bg-surface);
+    }
+
+    .section-header {
+      max-width: 46rem;
+      margin-block-end: 2.5rem;
+    }
+
+    .section-eyebrow {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--brand-accent);
+      margin-block-end: 0.45rem;
+      display: block;
+    }
+
+    .section-header h2 {
+      font-size: clamp(1.65rem, 3vw, 2.2rem);
+      color: var(--bg-navy);
+      margin-block-end: 0.65rem;
+    }
+
+    .section-header p {
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    /* Filter Bar */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-block-end: 2rem;
+    }
+
+    .filter-btn {
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 0.5rem 1.05rem;
+      min-height: 48px;
+      border-radius: 999px;
+      border: 1px solid var(--border-control);
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      cursor: pointer;
+    }
+
+    .filter-btn[aria-pressed="true"] {
+      background-color: var(--bg-navy);
+      border-color: var(--bg-navy);
+      color: #ffffff;
+    }
+
+    /* Treatments Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-card);
+    }
+
+    .service-card[hidden] {
+      display: none;
+    }
+
+    .service-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--brand-primary);
+      background-color: var(--bg-tint);
+      padding: 0.2rem 0.6rem;
+      border-radius: 0.25rem;
+      margin-block-end: 0.75rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.2rem;
+      color: var(--bg-navy);
+      margin-block-end: 0.5rem;
+    }
+
+    .service-card p {
+      color: var(--text-secondary);
+      font-size: 0.92rem;
+      margin-block: 0 1.25rem;
+    }
+
+    .service-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block-start: 0.9rem;
+      border-block-start: 1px solid var(--border-subtle);
+      font-size: 0.84rem;
+      color: var(--text-secondary);
+      margin-block-end: 1rem;
+    }
+
+    /* Diferenciais / Autoridade */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 1.5rem;
+    }
+
+    .pillar-card {
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+
+    .pillar-card h3 {
+      font-size: 1.1rem;
+      color: var(--bg-navy);
+      margin-block-end: 0.45rem;
+    }
+
+    .pillar-card p {
+      margin: 0;
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+    }
+
+    /* Reviews Section */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      gap: 1.5rem;
+    }
+
+    .review-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      margin: 0;
+    }
+
+    .review-stars {
+      color: #c78b15;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-block-end: 0.5rem;
+    }
+
+    .review-text {
+      font-style: italic;
+      color: var(--text-primary);
+      margin-block: 0 1rem;
+    }
+
+    .review-author {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+    }
+
+    /* Accordion (Modern Web Guidance Compliant) */
+    .accordion {
+      max-width: 48rem;
+    }
+
+    .accordion details {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      margin-block-end: 0.75rem;
+      padding-inline: 1.25rem;
+    }
+
+    .accordion summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 0.75ch;
+      padding-block: 1.1rem;
+      font-weight: 600;
+      font-size: 1.02rem;
+      color: var(--bg-navy);
+      cursor: pointer;
+    }
+
+    .accordion summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .accordion summary::before {
+      content: "";
+      inline-size: 1em;
+      block-size: 1em;
+      flex-shrink: 0;
+      background-color: currentColor;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center / contain;
+      rotate: -90deg;
+    }
+
+    .accordion summary:dir(rtl)::before {
+      rotate: 90deg;
+    }
+
+    .accordion details[open] > summary::before {
+      rotate: 0deg;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .accordion summary::before {
+        transition: rotate 0.2s;
+      }
+    }
+
+    .accordion details::details-content {
+      interpolate-size: allow-keywords;
+      overflow: clip;
+      contain: layout;
+    }
+
+    .accordion details:not([open])::details-content {
+      block-size: 0;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .accordion details::details-content {
+        transition: block-size, content-visibility, display;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+        transition-behavior: allow-discrete;
+      }
+    }
+
+    .accordion-body {
+      padding-block: 0.85rem 1.15rem;
+      color: var(--text-secondary);
+      border-block-start: 1px solid var(--border-subtle);
+    }
+
+    /* Location & Hours Grid */
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    @media (max-width: 52rem) {
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .info-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+    }
+
+    .hours-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hours-list li {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 0.6rem;
+      border-block-end: 1px solid var(--border-subtle);
+      font-size: 0.95rem;
+    }
+
+    .hours-list li:last-child {
+      border-block-end: none;
+    }
+
+    /* Forms (Modern Web Guidance Compliant) */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+      margin-block-end: 1.35rem;
+    }
+
+    .form-group label {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+
+    .hint {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    .error-msg {
+      font-size: 0.85rem;
+      color: var(--error-color);
+      font-weight: 600;
+    }
+
+    .error-msg[hidden] {
+      display: none;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      font: inherit;
+      font-size: max(1rem, 1em);
+      padding: 0.75rem;
+      min-height: 48px;
+      border: 1.5px solid var(--border-control);
+      border-radius: var(--radius-sm);
+      background-color: #ffffff;
+      color: var(--text-primary);
+    }
+
+    @media (pointer: coarse) {
+      input[type="text"],
+      select,
+      textarea {
+        min-height: 52px;
+      }
+    }
+
+    input:user-invalid,
+    select:user-invalid,
+    input[aria-invalid="true"],
+    select[aria-invalid="true"] {
+      border-color: var(--error-color);
+      background-color: #fff8f7;
+    }
+
+    fieldset {
+      width: 100%;
+      border: 1.5px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem 1rem;
+      margin-inline: 0;
+      margin-block-end: 1.35rem;
+    }
+
+    legend {
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding-inline: 0.35rem;
+    }
+
+    .radio-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+      gap: 0.65rem;
+      margin-block-start: 0.35rem;
+    }
+
+    .radio-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--bg-page);
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .radio-item input[type="radio"] {
+      accent-color: var(--brand-primary);
+      width: 1.15rem;
+      height: 1.15rem;
+      margin: 0;
+      flex-shrink: 0;
+    }
+
+    .radio-item label {
+      font-size: 0.9rem;
+      cursor: pointer;
+      padding: 8px 0;
+      margin: -8px 0;
+      width: 100%;
+    }
+
+    .whatsapp-preview {
+      background-color: #edf7f0;
+      border: 1px solid #b7dec4;
+      border-radius: var(--radius-sm);
+      padding: 0.875rem 1rem;
+      font-size: 0.875rem;
+      color: #163d26;
+      margin-block-end: 1.25rem;
+      white-space: pre-line;
+    }
+
+    /* Native Modal Dialog (Modern Web Guidance Compliant) */
+    dialog {
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 0;
+      width: min(92vw, 35rem);
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.3);
+    }
+
+    dialog:modal {
+      overscroll-behavior: contain;
+    }
+
+    dialog::backdrop {
+      overflow: hidden;
+      overscroll-behavior: contain;
+      background-color: rgba(9, 29, 46, 0.65);
+      backdrop-filter: blur(3px);
+    }
+
+    .dialog-inner {
+      padding: 1.75rem;
+    }
+
+    .dialog-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-block-end: 1.25rem;
+      padding-block-end: 0.875rem;
+      border-block-end: 1px solid var(--border-subtle);
+    }
+
+    .dialog-header h2 {
+      font-size: 1.35rem;
+      color: var(--bg-navy);
+      margin: 0;
+    }
+
+    .btn-close {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      min-width: 48px;
+      min-height: 48px;
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+    }
+
+    .btn-close:hover {
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+    }
+
+    .site-footer {
+      padding-block: 2.5rem;
+      background-color: var(--bg-navy-deep);
+      color: #c2d4e4;
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra de Demonstração Comercial -->
+  <aside class="demo-banner" aria-label="Aviso de protótipo comercial">
+    <div class="container demo-banner-inner">
+      <div>
+        <span class="demo-badge">Protótipo Comercial</span>
+        <span>Proposta de Site + Pré-Triagem Clínica para <strong>H C Odontologia e Estética</strong></span>
+      </div>
+      <div>
+        <span>Substitui o link <code>wa.me</code> cru no Google Maps por <strong>autoridade + triagem automática</strong></span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Cabeçalho Principal -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#topo" class="brand-logo">
+        <span class="brand-monogram" aria-hidden="true">HC</span>
+        <span class="brand-text">
+          <span class="brand-name">H C Odontologia e Estética</span>
+          <span class="brand-tagline">Centro · São Bernardo do Campo</span>
+        </span>
+      </a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links">
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#diferenciais">A Clínica</a></li>
+          <li><a href="#avaliacoes">5,0 ★ (173)</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li><a href="#localizacao">Localização</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="btn btn-primary js-open-booking" data-service="Avaliação Odontológica Completa">
+        Agendar Avaliação
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="rating-pill">
+            <span aria-hidden="true">★★★★★</span>
+            <span>Nota máxima 5,0 no Google · 173 avaliações verificadas</span>
+          </div>
+          <h1>Odontologia moderna e estética do sorriso com excelência no Centro de São Bernardo.</h1>
+          <p class="hero-lead">
+            Da prevenção e restaurações estéticas ao clareamento e facetas personalizadas. Atendimento humanizado e pontual na Rua Tenente Salles, 13, reconhecido com nota máxima por 173 pacientes.
+          </p>
+          <div class="hero-actions">
+            <button type="button" class="btn btn-gold js-open-booking" data-service="Avaliação Odontológica Completa">
+              Agendar Consulta pelo WhatsApp
+            </button>
+            <a href="#tratamentos" class="btn hero-outline-btn">
+              Conhecer Tratamentos
+            </a>
+          </div>
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <strong>5,0 ★ no Google</strong>
+              <span>173 avaliações de pacientes reais</span>
+            </div>
+            <div class="metric-item">
+              <strong>Centro de SBC</strong>
+              <span>R. Tenente Salles, 13 · Sala 04</span>
+            </div>
+            <div class="metric-item">
+              <strong>Seg a Sábado</strong>
+              <span>Seg–Sex 09h–18h · Sáb 09h–13h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card de Triagem Clínica Rápida -->
+        <div class="hero-card">
+          <span class="hero-card-badge">Pré-Triagem Digital da Recepção</span>
+          <h2>Agende sua avaliação em menos de 1 minuto</h2>
+          <p>Selecione o motivo do contato abaixo para agilizar o atendimento da nossa recepção diretamente no WhatsApp oficial.</p>
+
+          <div class="status-box">
+            <span><span class="status-dot" aria-hidden="true"></span><strong>WhatsApp:</strong> (11) 99388-7726</span>
+            <span>Seg–Sex 09h–18h · Sáb até 13h</span>
+          </div>
+
+          <div class="form-group">
+            <label for="quick-service">Qual atendimento você precisa?</label>
+            <select id="quick-service" name="quick_service">
+              <option value="Avaliação Odontológica Completa">Avaliação Odontológica Completa (Check-up)</option>
+              <option value="Clareamento Dental Profissional">Clareamento Dental Profissional</option>
+              <option value="Facetas / Lentes de Contato Dental">Facetas / Lentes de Contato Dental</option>
+              <option value="Restaurações Estéticas em Resina">Restaurações Estéticas em Resina</option>
+              <option value="Profilaxia, Limpeza e Prevenção">Profilaxia, Limpeza e Prevenção</option>
+              <option value="Reabilitação Oral / Prótese">Reabilitação Oral / Prótese</option>
+              <option value="Urgência / Dor ou Dente Quebrado">Urgência — Dor ou Dente Quebrado</option>
+            </select>
+          </div>
+
+          <button type="button" id="quick-start-btn" class="btn btn-primary" style="width: 100%;">
+            Escolher Turno e Enviar no WhatsApp
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Especialidades e Tratamentos -->
+    <section id="tratamentos" class="section" aria-labelledby="trat-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Odontologia Geral &amp; Estética</span>
+          <h2 id="trat-heading">Tratamentos Personalizados para seu Sorriso</h2>
+          <p>Cada plano de tratamento começa com um diagnóstico detalhado para unir saúde bucal, função mastigatória e naturalidade estética.</p>
+        </div>
+
+        <div class="filter-bar" role="group" aria-label="Filtrar tratamentos por área">
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">Todos (6)</button>
+          <button type="button" class="filter-btn" data-filter="estetica" aria-pressed="false">Estética do Sorriso (3)</button>
+          <button type="button" class="filter-btn" data-filter="saude" aria-pressed="false">Saúde, Prevenção &amp; Reabilitação (3)</button>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card" data-category="estetica">
+            <div>
+              <span class="service-tag">Estética Dental</span>
+              <h3>Clareamento Dental Profissional</h3>
+              <p>Protocolos seguros de clareamento em consultório, supervisionado ou combinado para devolver luminosidade aos dentes sem comprometer o esmalte e controlando a sensibilidade.</p>
+            </div>
+            <div>
+              <div class="service-meta">
+                <span>Diagnóstico prévio incluso</span>
+                <span>Resultado natural</span>
+              </div>
+              <button type="button" class="btn btn-outline js-open-booking" style="width: 100%;" data-service="Clareamento Dental Profissional">
+                Consultar Clareamento
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="estetica">
+            <div>
+              <span class="service-tag">Estética Dental</span>
+              <h3>Facetas &amp; Lentes de Contato</h3>
+              <p>Planejamento estético individualizado para corrigir formato, cor, espaços (diastemas) e desgaste dental, respeitando a proporção facial de cada paciente.</p>
+            </div>
+            <div>
+              <div class="service-meta">
+                <span>Planejamento personalizado</span>
+                <span>Alta durabilidade</span>
+              </div>
+              <button type="button" class="btn btn-outline js-open-booking" style="width: 100%;" data-service="Facetas / Lentes de Contato Dental">
+                Agendar Avaliação Estética
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="estetica">
+            <div>
+              <span class="service-tag">Estética Dental</span>
+              <h3>Restaurações Estéticas em Resina</h3>
+              <p>Substituição de restaurações escurecidas e reparo de fraturas ou cáries com resinas de alta estética que reproduzem cor e translucidez naturais do dente.</p>
+            </div>
+            <div>
+              <div class="service-meta">
+                <span>Acabamento imperceptível</span>
+                <span>Preservação dental</span>
+              </div>
+              <button type="button" class="btn btn-outline js-open-booking" style="width: 100%;" data-service="Restaurações Estéticas em Resina">
+                Agendar Restauração
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="saude">
+            <div>
+              <span class="service-tag">Prevenção</span>
+              <h3>Profilaxia, Limpeza &amp; Check-up</h3>
+              <p>Remoção de tártaro e placa bacteriana, polimento dental e revisão preventiva completa para evitar infiltrações, gengivite e tratamentos complexos no futuro.</p>
+            </div>
+            <div>
+              <div class="service-meta">
+                <span>Recomendado a cada 6 meses</span>
+                <span>Adultos e jovens</span>
+              </div>
+              <button type="button" class="btn btn-outline js-open-booking" style="width: 100%;" data-service="Profilaxia, Limpeza e Prevenção">
+                Agendar Limpeza / Check-up
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="saude">
+            <div>
+              <span class="service-tag">Reabilitação</span>
+              <h3>Reabilitação Oral &amp; Manutenção</h3>
+              <p>Soluções integradas para recuperar função mastigatória, estabilidade da mordida e confiança ao sorrir, com acompanhamento próximo em todas as etapas.</p>
+            </div>
+            <div>
+              <div class="service-meta">
+                <span>Plano etapa por etapa</span>
+                <span>Foco funcional e estético</span>
+              </div>
+              <button type="button" class="btn btn-outline js-open-booking" style="width: 100%;" data-service="Reabilitação Oral / Prótese">
+                Agendar Diagnóstico
+              </button>
+            </div>
+          </article>
+
+          <article class="service-card" data-category="saude">
+            <div>
+              <span class="service-tag">Prioridade Clínica</span>
+              <h3>Atendimento de Dor ou Urgência</h3>
+              <p>Triagem prioritária para dor de dente, sensibilidade aguda, restauração solta ou fratura dental. Informe seu sintoma na pré-triagem para encaixe rápido.</p>
+            </div>
+            <div>
+              <div class="service-meta">
+                <span>Triagem direta via WhatsApp</span>
+                <span>Centro de SBC</span>
+              </div>
+              <button type="button" class="btn btn-outline js-open-booking" style="width: 100%;" data-service="Urgência / Dor ou Dente Quebrado">
+                Solicitar Encaixe Prioritário
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais da Clínica -->
+    <section id="diferenciais" class="section section-alt" aria-labelledby="dif-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Por que escolher a H C Odontologia</span>
+          <h2 id="dif-heading">Confiança comprovada por 173 pacientes com nota máxima</h2>
+          <p>Alcançar nota 5,0 com quase duzentas avaliações no Google Maps é reflexo direto de atendimento técnico transparente e cuidado real com cada paciente.</p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <h3>Diagnóstico Claro e Transparente</h3>
+            <p>Explicação detalhada de cada etapa do tratamento, prioridades clínicas e opções disponíveis antes de qualquer procedimento.</p>
+          </div>
+          <div class="pillar-card">
+            <h3>Atendimento Sem Pressa</h3>
+            <p>Consultas com hora marcada na Rua Tenente Salles, respeitando seu tempo e garantindo conforto até para quem tem receio de dentista.</p>
+          </div>
+          <div class="pillar-card">
+            <h3>Atendimento aos Sábados</h3>
+            <p>Além do horário comercial de segunda a sexta (09h às 18h), atendemos aos sábados das 09h às 13h para facilitar sua rotina.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Prova Social / Avaliações Reais -->
+    <section id="avaliacoes" class="section" aria-labelledby="reviews-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Reputação no Google Maps</span>
+          <h2 id="reviews-heading">Nota 5,0 de 5,0 · 173 Avaliações Verificadas</h2>
+          <p>Reconhecimento constante de pacientes de São Bernardo do Campo pela qualidade dos resultados e acolhimento da equipe.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p class="review-text">"Atendimento excelente do início ao fim! Equipe atenciosa, consultório impecável no Centro de SBC e explicação clara de todo o tratamento."</p>
+            <footer class="review-author">— Sidneide Santos · Avaliação recente no Google Maps</footer>
+          </blockquote>
+
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p class="review-text">"Fiz avaliação estética e clareamento na clínica e o resultado ficou super natural. Pontualidade e cuidado que dão total segurança."</p>
+            <footer class="review-author">— Paciente verificada · Google Maps (5,0 ★)</footer>
+          </blockquote>
+
+          <blockquote class="review-card">
+            <div class="review-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <p class="review-text">"Profissionais extremamente cuidadosos e mão super leve. Recomendo para toda a família, além de ser muito bem localizado na Tenente Salles."</p>
+            <footer class="review-author">— Paciente verificado · Google Maps (5,0 ★)</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ com <details> nativo (Modern Web Guidance Accordion) -->
+    <section id="duvidas" class="section section-alt" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">Informações ao Paciente</span>
+          <h2 id="faq-heading">Perguntas Frequentes</h2>
+          <p>Respostas diretas para você agendar sua avaliação com segurança.</p>
+        </div>
+
+        <div class="accordion">
+          <details open>
+            <summary>Como funciona o agendamento pelo site?</summary>
+            <div class="accordion-body">
+              Ao clicar em <strong>Agendar Avaliação</strong>, você seleciona o tratamento desejado, informa se é primeira consulta, retorno ou urgência e escolhe o melhor turno. A mensagem já chega organizada no WhatsApp oficial <code>(11) 99388-7726</code> para confirmarmos o horário exato.
+            </div>
+          </details>
+
+          <details>
+            <summary>Vocês atendem aos sábados?</summary>
+            <div class="accordion-body">
+              Sim! Atendemos de <strong>segunda a sexta-feira das 09h às 18h</strong> e aos <strong>sábados das 09h às 13h</strong>, mediante agendamento prévio.
+            </div>
+          </details>
+
+          <details>
+            <summary>É possível passar por uma avaliação antes de definir o tratamento?</summary>
+            <div class="accordion-body">
+              Com certeza. Todo tratamento odontológico ou estético começa com uma avaliação clínica completa para entendermos suas queixas, checar a saúde bucal e montar um planejamento transparente.
+            </div>
+          </details>
+
+          <details>
+            <summary>Onde fica localizada a H C Odontologia e Estética?</summary>
+            <div class="accordion-body">
+              Estamos na <strong>Rua Tenente Salles, 13 — Sala 04, Centro de São Bernardo do Campo - SP (CEP 09720-130)</strong>, com fácil acesso pela região central.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Localização e Horários -->
+    <section id="localizacao" class="section" aria-labelledby="loc-heading">
+      <div class="container location-grid">
+        <div class="info-card">
+          <span class="section-eyebrow">Visite a Clínica</span>
+          <h2 id="loc-heading">Endereço e Contato</h2>
+          <p><strong>H C Odontologia e Estética</strong></p>
+          <p>
+            Rua Tenente Salles, 13 — Sala 04, Centro<br>
+            São Bernardo do Campo - SP, CEP 09720-130
+          </p>
+          <p>
+            <strong>Telefone / WhatsApp:</strong> <a href="https://wa.me/5511993887726">(11) 99388-7726</a>
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-block-start: 1.5rem;">
+            <button type="button" class="btn btn-primary js-open-booking" data-service="Avaliação Odontológica Completa">
+              Agendar Consulta
+            </button>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=H+C+Odontologia+e+Estetica+Rua+Tenente+Salles+13+Sao+Bernardo+do+Campo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+              Traçar Rota no Maps
+            </a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <span class="section-eyebrow">Consultas com Hora Marcada</span>
+          <h2>Horário de Atendimento</h2>
+          <ul class="hours-list">
+            <li><span>Segunda-feira</span> <strong>09:00 – 18:00</strong></li>
+            <li><span>Terça-feira</span> <strong>09:00 – 18:00</strong></li>
+            <li><span>Quarta-feira</span> <strong>09:00 – 18:00</strong></li>
+            <li><span>Quinta-feira</span> <strong>09:00 – 18:00</strong></li>
+            <li><span>Sexta-feira</span> <strong>09:00 – 18:00</strong></li>
+            <li><span>Sábado</span> <strong>09:00 – 13:00</strong></li>
+            <li><span>Domingo</span> <span>Fechado</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>H C Odontologia e Estética</strong><br>
+        <span>Rua Tenente Salles, 13 - Sala 04 · Centro, São Bernardo do Campo - SP, 09720-130</span>
+      </div>
+      <div>
+        <span>WhatsApp: (11) 99388-7726 · Avaliação Google: 5,0 ★ (173 avaliações)</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Nativo de Pré-Triagem Clínica para WhatsApp -->
+  <dialog id="booking-dialog" closedby="any" aria-labelledby="booking-dialog-title">
+    <div class="dialog-inner">
+      <div class="dialog-header">
+        <div>
+          <span class="section-eyebrow">Pré-Triagem Digital · Recepção</span>
+          <h2 id="booking-dialog-title">Agendar na H C Odontologia</h2>
+        </div>
+        <button type="button" id="close-dialog-btn" class="btn-close" aria-label="Fechar janela de agendamento">
+          &times;
+        </button>
+      </div>
+
+      <form id="booking-form" action="https://wa.me/5511993887726" method="GET" novalidate>
+        <div class="form-group">
+          <label for="patient-name">Nome do paciente: <span aria-hidden="true">*</span></label>
+          <input
+            type="text"
+            id="patient-name"
+            name="patient_name"
+            autocomplete="name"
+            enterkeyhint="next"
+            required
+            minlength="2"
+            aria-describedby="name-hint name-error"
+            autofocus
+          >
+          <span id="name-hint" class="hint">Como nossa recepção deve chamar você no WhatsApp?</span>
+          <span id="name-error" class="error-msg" role="status" aria-live="polite" hidden>
+            Por favor, informe seu nome (mínimo 2 letras).
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="service-select">Tratamento / Motivo principal: <span aria-hidden="true">*</span></label>
+          <select id="service-select" name="service" required>
+            <option value="Avaliação Odontológica Completa">Avaliação Odontológica Completa (Check-up)</option>
+            <option value="Clareamento Dental Profissional">Clareamento Dental Profissional</option>
+            <option value="Facetas / Lentes de Contato Dental">Facetas / Lentes de Contato Dental</option>
+            <option value="Restaurações Estéticas em Resina">Restaurações Estéticas em Resina</option>
+            <option value="Profilaxia, Limpeza e Prevenção">Profilaxia, Limpeza e Prevenção</option>
+            <option value="Reabilitação Oral / Prótese">Reabilitação Oral / Prótese</option>
+            <option value="Urgência / Dor ou Dente Quebrado">Urgência — Dor ou Dente Quebrado</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>Tipo de atendimento:</legend>
+          <div class="radio-stack">
+            <div class="radio-item">
+              <input type="radio" id="visit-primeira" name="visit_type" value="Primeira consulta / Avaliação" checked>
+              <label for="visit-primeira">Primeira consulta</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="visit-retorno" name="visit_type" value="Já sou paciente (Retorno)">
+              <label for="visit-retorno">Já sou paciente</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="visit-urgencia" name="visit_type" value="Urgência / Desconforto">
+              <label for="visit-urgencia">Urgência / Dor</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Melhor período para sua consulta:</legend>
+          <div class="radio-stack">
+            <div class="radio-item">
+              <input type="radio" id="shift-manha" name="shift" value="Manhã (Seg–Sex, 09h às 12h)" checked>
+              <label for="shift-manha">Manhã (09h–12h)</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="shift-tarde" name="shift" value="Tarde (Seg–Sex, 12h às 18h)">
+              <label for="shift-tarde">Tarde (12h–18h)</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" id="shift-sabado" name="shift" value="Sábado (09h às 13h)">
+              <label for="shift-sabado">Sábado (09h–13h)</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="whatsapp-preview" id="message-preview" aria-live="polite"></div>
+
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: flex-end;">
+          <button type="button" id="cancel-dialog-btn" class="btn btn-outline">
+            Cancelar
+          </button>
+          <button type="submit" id="submit-whatsapp-btn" class="btn btn-primary">
+            Enviar Triagem no WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script>
+    (function () {
+      const WHATSAPP_NUMBER = '5511993887726';
+      const dialog = document.getElementById('booking-dialog');
+      const form = document.getElementById('booking-form');
+      const nameInput = document.getElementById('patient-name');
+      const nameError = document.getElementById('name-error');
+      const serviceSelect = document.getElementById('service-select');
+      const quickServiceSelect = document.getElementById('quick-service');
+      const quickStartBtn = document.getElementById('quick-start-btn');
+      const closeBtn = document.getElementById('close-dialog-btn');
+      const cancelBtn = document.getElementById('cancel-dialog-btn');
+      const previewBox = document.getElementById('message-preview');
+
+      function buildWhatsAppMessage() {
+        const name = nameInput.value.trim() || '[Seu Nome]';
+        const service = serviceSelect.value;
+        const visitInput = form.querySelector('input[name="visit_type"]:checked');
+        const shiftInput = form.querySelector('input[name="shift"]:checked');
+        const visit = visitInput ? visitInput.value : 'Primeira consulta';
+        const shift = shiftInput ? shiftInput.value : 'A combinar';
+
+        return (
+          'Olá, equipe H C Odontologia e Estética! Vim pelo site e gostaria de agendar:\n' +
+          '• Paciente: ' + name + '\n' +
+          '• Motivo / Tratamento: ' + service + '\n' +
+          '• Tipo de atendimento: ' + visit + '\n' +
+          '• Período preferido: ' + shift
+        );
+      }
+
+      function updatePreview() {
+        previewBox.textContent = 'Prévia da mensagem para a recepção:\n' + buildWhatsAppMessage();
+      }
+
+      function openBookingModal(preselectedService) {
+        if (preselectedService) {
+          serviceSelect.value = preselectedService;
+          if (preselectedService.indexOf('Urgência') !== -1) {
+            const urgencyRadio = document.getElementById('visit-urgencia');
+            if (urgencyRadio) urgencyRadio.checked = true;
+          }
+        }
+        updatePreview();
+        dialog.showModal();
+      }
+
+      for (const btn of document.querySelectorAll('.js-open-booking')) {
+        btn.addEventListener('click', () => {
+          openBookingModal(btn.getAttribute('data-service'));
+        });
+      }
+
+      quickStartBtn.addEventListener('click', () => {
+        openBookingModal(quickServiceSelect.value);
+      });
+
+      closeBtn.addEventListener('click', () => dialog.close('cancel'));
+      cancelBtn.addEventListener('click', () => dialog.close('cancel'));
+
+      dialog.addEventListener('close', () => {
+        dialog.returnValue = '';
+      });
+
+      // Mandatory fallback for browsers without native closedby="any" support
+      if (!('closedBy' in HTMLDialogElement.prototype)) {
+        dialog.addEventListener('click', (event) => {
+          if (event.target !== dialog) return;
+          const rect = dialog.getBoundingClientRect();
+          const isDialogContent = (
+            rect.top <= event.clientY &&
+            event.clientY <= rect.top + rect.height &&
+            rect.left <= event.clientX &&
+            event.clientX <= rect.left + rect.width
+          );
+          if (isDialogContent) return;
+          dialog.close();
+        });
+      }
+
+      let nameEdited = false;
+
+      function validateName() {
+        const valid = nameInput.value.trim().length >= 2;
+        if (!valid) {
+          nameInput.setAttribute('aria-invalid', 'true');
+          nameError.hidden = false;
+        } else {
+          nameInput.removeAttribute('aria-invalid');
+          nameError.hidden = true;
+        }
+        return valid;
+      }
+
+      nameInput.addEventListener('input', () => {
+        nameEdited = true;
+        if (nameInput.getAttribute('aria-invalid') === 'true' && nameInput.value.trim().length >= 2) {
+          nameInput.removeAttribute('aria-invalid');
+          nameError.hidden = true;
+        }
+        updatePreview();
+      });
+
+      nameInput.addEventListener('blur', () => {
+        if (nameEdited) {
+          validateName();
+        }
+      });
+
+      form.addEventListener('change', updatePreview);
+
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (!validateName()) {
+          nameInput.focus();
+          return;
+        }
+        const text = encodeURIComponent(buildWhatsAppMessage());
+        const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + text;
+        window.open(url, '_blank', 'noopener,noreferrer');
+        dialog.close('submitted');
+      });
+
+      // Category filtering for treatments
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const serviceCards = document.querySelectorAll('.service-card');
+
+      for (const btn of filterBtns) {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+          for (const b of filterBtns) {
+            b.setAttribute('aria-pressed', String(b === btn));
+          }
+          for (const card of serviceCards) {
+            const match = filter === 'all' || card.getAttribute('data-category') === filter;
+            card.hidden = !match;
+          }
+        });
+      }
+
+      updatePreview();
+    })();
+  </script>
+</body>
+</html>
